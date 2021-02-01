@@ -1,0 +1,883 @@
+/* GLOBAL RULES */
+
+.body {
+  background-color: #ffffff;
+  font-family: "Trip Sans Med";
+  position: relative;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* box-sizing: border-box; */
+}
+
+html {
+  font-family: "Trip Sans Med";
+}
+
+/* HEADER */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo img {
+  width: 180px;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  height: 42px;
+  width: 340px;
+  border: solid 2px #e0e0e0;
+  margin: 40px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar div {
+  margin-right: 20px;
+}
+
+.navbar div i {
+  margin-right: 5px;
+}
+
+.navbar button {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.navbar button:hover {
+  transition: 0.5s;
+  background-color: #333;
+}
+
+/* MAIN */
+
+/* h1 */
+
+h1 {
+  margin-top: 40px;
+  font-size: 54px;
+  font-family: "Trip Sans Med";
+  font-weight: bold;
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+
+/* EXPLORER */
+
+.explorer {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.explorer button {
+  display: flex;
+  width: 180px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  height: 70px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.explorer button:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+}
+
+.explorer button:first-child {
+  font-size: 17px;
+  flex-basis: 60%;
+  text-align: left;
+}
+
+.explorer button:last-child {
+  flex-basis: 30%;
+  justify-content: space-between;
+}
+
+/* PICTURES */
+
+.pictures {
+  display: flex;
+  height: 430px;
+  margin-bottom: 20px;
+}
+
+.pictures .col-1 {
+  height: 100%;
+  flex: 1;
+  margin-right: 3px;
+}
+
+.pictures .col-1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.pictures .col-2 {
+  height: 100%;
+  width: 480px;
+}
+
+.pictures .col-2 img {
+  width: 100%;
+  object-fit: cover;
+  height: calc(50% - 1.5px);
+}
+
+.pictures .col-2 img:first-child {
+  border-top-right-radius: 20px;
+}
+
+.pictures .col-2 img:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+/* LINE */
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 49px;
+  font-size: 12px;
+  font-family: "Trip Sans Reg";
+}
+
+.line > div:first-child {
+  display: flex;
+  color: grey;
+}
+
+.line > div:first-child > span:nth-child(even) {
+  margin: 0 6px;
+}
+
+.line i {
+  margin-left: 6px;
+}
+
+.line > div:first-child > span:nth-child(odd):hover {
+  cursor: pointer;
+  color: #333;
+  text-decoration: underline;
+}
+
+.line > div:first-child > div:hover {
+  cursor: pointer;
+  color: #333;
+  text-decoration: underline;
+}
+
+.line > div:last-child {
+  color: grey;
+}
+
+/* DISCOVER */
+
+.discover {
+  /* discover prépare le terrain des col-3 et col-4 */
+  /* advice : ajouter un background provisoire */
+  margin-bottom: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.discover .col-3 {
+  /* col-3 prend 1/5 du main container */
+  flex: 5;
+}
+
+.discover .col-3 h2 {
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.6px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.discover .col-3 p {
+  font-size: 20px;
+  line-height: 24px;
+  color: #333;
+  font-family: Georgia, sans-serif;
+}
+
+.discover .col-4 {
+  /* col-4 prend l'autre partie plus restreinte du main container */
+  /* col-4 est composée de 2 parties en colonne : info et img */
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  margin-left: 100px;
+}
+
+.discover .col-4 .info {
+  padding: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: #ff5d5d;
+}
+
+.discover .col-4 h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+.discover .col-4 p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 24px;
+}
+
+.discover .col-4 button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.discover .col-4 button:hover {
+  transition: 0.5s;
+  background-color: #333;
+}
+
+.discover img {
+  /* Img plan prends 100% de la largeur de col-4 */
+  /* Img plan prends une hauteur définie de col-4 */
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* CONSEILS DE VOYAGE */
+
+.rubrique {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.rubrique .trait-1 {
+  flex-grow: 2;
+  height: 1px;
+  background-color: black;
+}
+
+.rubrique h2 {
+  flex-grow: 0.25;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.rubrique .trait-2 {
+  flex-grow: 2;
+  height: 1px;
+  background-color: black;
+}
+
+.explorer-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.explorer-1 button {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: solid 2px #e0e0e0;
+  cursor: pointer;
+}
+
+.explorer-1 button img {
+  height: 80px;
+}
+
+.explorer-1 button span {
+  font-size: 20px;
+  text-align: left;
+}
+
+/* IMMANQUABLE À PARIS */
+
+.section2 {
+  margin-bottom: 90px;
+}
+
+/* Mise en page des traits + titre h2 */
+.rubrique-1 {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.rubrique-1 .trait-3 {
+  flex-grow: 2;
+  height: 1px;
+  background-color: black;
+}
+
+.rubrique-1 h2 {
+  flex-grow: 0.25;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.rubrique-1 .trait-4 {
+  flex-grow: 2;
+  height: 1px;
+  background-color: black;
+}
+
+/* Mise en place du bloc contenant les col-5 et col-6 */
+
+.section2 .carousell-1 {
+  display: flex;
+  height: 350px;
+  margin-top: 40px;
+}
+
+/* Mise en place du col-5 */
+
+.section2 .carousell-1 .col-5 {
+  height: 100%;
+  width: 25%;
+  padding-right: 30px;
+  /* indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur */
+  box-sizing: border-box;
+}
+
+/* Mise en place du col-6 */
+
+.section2 .carousell-1 .col-6 {
+  display: flex;
+  /* Gère le dépassement du contenu d'un élément dans son bloc */
+  overflow: hidden;
+  /* Valeur de la propriété overflow */
+  overflow-x: scroll;
+  height: 100%;
+  width: 75%;
+  /* background-color: magenta; */
+}
+
+/* Gestion du contenu du col-5 : titre h3 + p + span */
+
+.section2 .carousell-1 .col-5 h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+.section2 .carousell-1 .col-5 p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 12px;
+  font-family: Georgia, sans-serif;
+  margin: 30px 0;
+  color: #333333;
+}
+
+.section2 .carousell-1 .col-5 span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #545454;
+}
+
+.section2 .carousell-1 .col-5 span:hover {
+  cursor: pointer;
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Gestion du contenu du col-6 : photos */
+
+.section2 .carousell-1 .pic-carousell-1 {
+  height: 100%;
+  /* Faire en sorte qu'il y ai 3 photos / slide */
+  width: calc(100% / 3 - (30px / 3));
+  /* indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur */
+  box-sizing: border-box;
+  /* Facteur de rétrécissement d'un élément flexible s'il dépasse le conteneur */
+  flex-shrink: 0;
+}
+
+.section2 .carousell-1 .pic-carousell-1:not(:last-child) {
+  margin-right: 15px;
+}
+
+.section2 .pic-carousell-1 .pics {
+  width: 100%;
+  height: 206px;
+  position: relative;
+}
+
+.section2 .pic-carousell-1 .pics img {
+  height: 206px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section2 .pic-carousell-1 .pics .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Gestion du contenu du col-6 : textes */
+
+.section2 .pic-carousell-1 .details h5 {
+  font-size: 18px;
+  color: #545454;
+  line-height: 21.6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.section2 .pic-carousell-1 .details .icon span {
+  font-size: 15px;
+  line-height: 16.8px;
+  color: #333333;
+  margin-left: 5px;
+}
+
+.section2 .pic-carousell-1 .details p {
+  font-size: 13px;
+  line-height: 16.8px;
+  color: #333333;
+  margin-top: 5px;
+}
+
+.section2 .pic-carousell-1 .details .icon i:not(:last-child) {
+  margin-right: 2px;
+}
+
+/* Mise en place du bloc contenant les col-7 et col-8 */
+
+.section2 .carousell-2 {
+  display: flex;
+  height: 350px;
+  margin-top: 40px;
+}
+
+/* Mise en place du col-7 */
+
+.section2 .carousell-2 .col-7 {
+  height: 100%;
+  width: 25%;
+  padding-right: 30px;
+  /* indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur */
+  box-sizing: border-box;
+}
+
+/* Mise en place du col-8 */
+
+.section2 .carousell-2 .col-8 {
+  display: flex;
+  /* Gère le dépassement du contenu d'un élément dans son bloc */
+  overflow: hidden;
+  /* Valeur de la propriété overflow */
+  overflow-x: scroll;
+  height: 100%;
+  width: 75%;
+  /* background-color: magenta; */
+}
+
+/* Gestion du contenu du col-7 : titre h3 + p + span */
+
+.section2 .carousell-2 .col-7 h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+.section2 .carousell-2 .col-7 p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 12px;
+  font-family: Georgia, sans-serif;
+  margin: 30px 0;
+  color: #333333;
+}
+
+.section2 .carousell-2 .col-7 span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #545454;
+}
+
+.section2 .carousell-2 .col-7 span:hover {
+  cursor: pointer;
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Gestion du contenu du col-8 : photos */
+
+.section2 .carousell-2 .pic-carousell-2 {
+  height: 100%;
+  /* Faire en sorte qu'il y ai 3 photos / slide */
+  width: calc(100% / 3 - (30px / 3));
+  /* indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur */
+  box-sizing: border-box;
+  /* Facteur de rétrécissement d'un élément flexible s'il dépasse le conteneur */
+  flex-shrink: 0;
+}
+
+.section2 .carousell-2 .pic-carousell-2:not(:last-child) {
+  margin-right: 15px;
+}
+
+.section2 .pic-carousell-2 .pics {
+  width: 100%;
+  height: 206px;
+  position: relative;
+}
+
+.section2 .pic-carousell-2 .pics img {
+  height: 206px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section2 .pic-carousell-2 .pics .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Gestion du contenu du col-8 : textes */
+
+.section2 .pic-carousell-2 .details h5 {
+  font-size: 18px;
+  color: #545454;
+  line-height: 21.6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.section2 .pic-carousell-2 .details .icon span {
+  font-size: 15px;
+  line-height: 16.8px;
+  color: #333333;
+  margin-left: 5px;
+}
+
+.section2 .pic-carousell-2 .details .icon i:not(:last-child) {
+  margin-right: 2px;
+}
+
+/* Mise en place du bloc contenant les col-9 et col-10 */
+
+.section2 .carousell-3 {
+  display: flex;
+  height: 350px;
+  margin-top: 40px;
+}
+
+/* Mise en place du col-9 */
+
+.section2 .carousell-3 .col-9 {
+  height: 100%;
+  width: 25%;
+  padding-right: 30px;
+  /* indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur */
+  box-sizing: border-box;
+}
+
+/* Mise en place du col-10 */
+
+.section2 .carousell-3 .col-10 {
+  display: flex;
+  /* Gère le dépassement du contenu d'un élément dans son bloc */
+  overflow: hidden;
+  /* Valeur de la propriété overflow */
+  overflow-x: scroll;
+  height: 100%;
+  width: 75%;
+  /* background-color: magenta; */
+}
+
+/* Gestion du contenu du col-9 : titre h3 + p + span */
+
+.section2 .carousell-3 .col-9 h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 12px;
+  font-weight: normal;
+}
+
+.section2 .carousell-3 .col-9 p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 12px;
+  font-family: Georgia, sans-serif;
+  margin: 30px 0;
+  color: #333333;
+}
+
+.section2 .carousell-3 .col-9 span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #545454;
+}
+
+.section2 .carousell-3 .col-9 span:hover {
+  cursor: pointer;
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Gestion du contenu du col-10 : photos */
+
+.section2 .carousell-3 .pic-carousell-3 {
+  height: 100%;
+  /* Faire en sorte qu'il y ai 3 photos / slide */
+  width: calc(100% / 3 - (30px / 3));
+  /* indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur */
+  box-sizing: border-box;
+  /* Facteur de rétrécissement d'un élément flexible s'il dépasse le conteneur */
+  flex-shrink: 0;
+}
+
+.section2 .carousell-3 .pic-carousell-3:not(:last-child) {
+  margin-right: 15px;
+}
+
+.section2 .pic-carousell-3 .pics {
+  width: 100%;
+  height: 206px;
+  position: relative;
+}
+
+.section2 .pic-carousell-3 .pics img {
+  height: 206px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section2 .pic-carousell-3 .pics .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Gestion du contenu du col-10 : textes */
+
+.section2 .pic-carousell-3 .details h5 {
+  font-size: 18px;
+  color: #545454;
+  line-height: 21.6px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.section2 .pic-carousell-3 .details .icon span {
+  font-size: 15px;
+  line-height: 16.8px;
+  color: #333333;
+  margin-left: 5px;
+}
+
+.section2 .pic-carousell-3 .details p {
+  font-size: 13px;
+  line-height: 16.8px;
+  color: #333333;
+  margin-top: 5px;
+}
+
+.section2 .pic-carousell-3 .details .icon i:not(:last-child) {
+  margin-right: 2px;
+}
+
+/* FOOTER */
+
+footer {
+  height: 156px;
+  background-color: #faf1ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+footer img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+footer img:hover {
+  transform: rotate(0.5turn);
+}
+
+/* MODAL */
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.form-container {
+  border: 2px white solid;
+  height: 70vh;
+  width: 50vh;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 30px;
+  color: #5d48d2;
+}
+
+.form-container p {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+.form-container i {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+#contactForm input {
+  margin-bottom: 30px;
+  height: 30px;
+  width: 250px;
+  border-radius: 8px;
+  border-color: #5d48d2;
+}
+
+#contactForm textarea {
+  margin-bottom: 30px;
+  height: 100px;
+  width: 250px;
+  border-radius: 8px;
+  border-color: #5d48d2;
+}
+
+#contactForm button {
+  height: 70px;
+  width: 250px;
+  margin-bottom: 20px;
+  background-color: #5d48d2;
+  color: #e0e0e0;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+  /* header */
+  header .navbar span {
+    display: none;
+  }
+}
